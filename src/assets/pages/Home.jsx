@@ -2,11 +2,14 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-800">
+    <section className="min-h-screen flex items-center justify-center px-6 bg-gray-100 dark:bg-gray-800 transition-colors duration-300">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-blue-600">Hi, I'm Khalique Ahmed 👋</h1>
-        <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">
-          I'm a Frontend Developer building responsive and beautiful web apps.
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-blue-600 mb-4 animate-fade-in">
+          Hi, I'm Khalique Ahmed 👋
+        </h1>
+
+        <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+          I'm a passionate Frontend Developer focused on creating modern, responsive, and user-friendly web applications.
         </p>
       </div>
     </section>

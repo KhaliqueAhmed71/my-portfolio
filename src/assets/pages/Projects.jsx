@@ -22,22 +22,38 @@ const Projects = () => {
       ],
       live: 'https://redux-cart-ap.netlify.app/',
     },
-    
+    {
+  name: 'Delish – Restaurant Cafe 🍽️',
+  description:
+    'A pixel-perfect restaurant website built from a Figma template. Fully responsive with modern UI/UX. Includes pages for Home, Menu, About, and Reservation.',
+  stack: [
+    'React', 'React Router', 'Tailwind CSS', 'Vite',
+     'Responsive Layout', 'Dark Mode',
+  ],
+  live: 'https://delish-restaurant-cafe.netlify.app/',
+},
+
   ];
 
   return (
-    <section className="p-8 bg-gray-100 dark:bg-gray-800 min-h-screen text-gray-900 dark:text-gray-100">
-      <h2 className="text-5xl font-bold mb-10 text-blue-600 text-center">Projects</h2>
+    <section className="px-6 py-16 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-300">
+      <h2 className="text-4xl sm:text-5xl font-bold text-center text-blue-600 mb-12">Projects</h2>
 
       <div className="grid gap-10 md:grid-cols-2">
         {projects.map((project, index) => (
-          <div key={index} className="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-8">
-            <h3 className="text-3xl font-semibold text-blue-500 mb-4">{project.name}</h3>
-            <p className="mb-6 text-lg leading-relaxed">{project.description}</p>
+          <div
+            key={index}
+            className="bg-white dark:bg-gray-700 rounded-2xl shadow-lg p-6 sm:p-8 hover:scale-[1.02] transition-transform duration-300"
+          >
+            <h3 className="text-2xl sm:text-3xl font-semibold text-blue-500 mb-4">
+              {project.name}
+            </h3>
+
+            <p className="text-base sm:text-lg leading-relaxed mb-6">{project.description}</p>
 
             <div className="mb-6">
-              <h4 className="font-semibold mb-2 text-lg">Tech Stack:</h4>
-              <ul className="list-disc list-inside text-base text-gray-800 dark:text-gray-200">
+              <h4 className="font-semibold text-lg mb-2">Tech Stack:</h4>
+              <ul className="list-disc list-inside text-sm sm:text-base space-y-1">
                 {project.stack.map((tech, i) => (
                   <li key={i}>{tech}</li>
                 ))}
@@ -49,7 +65,7 @@ const Projects = () => {
                 href={project.live}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-block mt-2 px-5 py-3 text-lg bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+                className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg text-base font-medium transition"
               >
                 🔗 Live Demo
               </a>
