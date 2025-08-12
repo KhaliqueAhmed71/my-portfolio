@@ -1,12 +1,12 @@
 import React from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom';
-import Home from "./assets/pages/Home.jsx";
-import About from './assets/pages/About';
-import Projects from './assets/pages/Projects';
-import Contact from './assets/pages/Contact';
-import Skills from './assets/pages/Skills';
-import Navbar from './assets/components/Navbar';
-import Footer from './assets/components/Footer';
+import Home from "./pages/Home.jsx";
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import Skills from './pages/Skills';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 // Page Transition Component
