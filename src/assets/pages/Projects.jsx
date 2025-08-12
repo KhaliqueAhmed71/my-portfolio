@@ -1,39 +1,48 @@
 import React from 'react';
 
 const Projects = () => {
-  const projects = [
-    {
-      name: 'CineScope 🎬',
-      description:
-        'CineScope is a movie discovery web app where users can browse trending movies, view detailed movie info, and manage their favorites. Built with React and TMDB/OMDB API.',
-      stack: [
-        'React', 'React Router', 'Tailwind CSS', 'Material UI',
-        'Axios', 'Context API / Redux', 'TMDB API / OMDB API',
-      ],
-      live: 'https://cinescopeweb.netlify.app/',
-    },
-    {
-      name: 'Redux Cart 🛒',
-      description:
-        'A minimal shopping cart app built using Redux Toolkit. Users can add or remove items, view total price, and see a clean state-managed cart system — deployed to Netlify.',
-      stack: [
-        'React', 'Redux Toolkit', 'React-Redux', 'Tailwind CSS',
-        'useSelector & useDispatch', 'Netlify Deployment',
-      ],
-      live: 'https://redux-cart-ap.netlify.app/',
-    },
-    {
-  name: 'Delish – Restaurant Cafe 🍽️',
-  description:
-    'A pixel-perfect restaurant website built from a Figma template. Fully responsive with modern UI/UX. Includes pages for Home, Menu, About, and Reservation.',
-  stack: [
-    'React', 'React Router', 'Tailwind CSS', 'Vite',
-     'Responsive Layout', 'Dark Mode',
-  ],
-  live: 'https://delish-restaurant-cafe.netlify.app/',
-},
-
-  ];
+const projects = [
+  {
+    name: 'CineScope 🎬',
+    description:
+      'CineScope is a movie discovery web app where users can browse trending movies, view detailed movie info, and manage their favorites. Built with React and TMDB/OMDB API.',
+    stack: [
+      'React', 'React Router', 'Tailwind CSS', 'Material UI',
+      'Axios', 'Context API / Redux', 'TMDB API / OMDB API',
+    ],
+    live: 'https://cinescopeweb.netlify.app/',
+  },
+  {
+    name: 'Redux Cart 🛒',
+    description:
+      'A minimal shopping cart app built using Redux Toolkit. Users can add or remove items, view total price, and see a clean state-managed cart system — deployed to Netlify.',
+    stack: [
+      'React', 'Redux Toolkit', 'React-Redux', 'Tailwind CSS',
+      'useSelector & useDispatch', 'Netlify Deployment',
+    ],
+    live: 'https://redux-cart-ap.netlify.app/',
+  },
+  {
+    name: 'Delish – Restaurant Cafe 🍽️',
+    description:
+      'A pixel-perfect restaurant website built from a Figma template. Fully responsive with modern UI/UX. Includes pages for Home, Menu, About, and Reservation.',
+    stack: [
+      'React', 'React Router', 'Tailwind CSS', 'Vite',
+      'Responsive Layout', 'Dark Mode',
+    ],
+    live: 'https://delish-restaurant-cafe.netlify.app/',
+  },
+  {
+    name: 'React Quiz App ❓',
+    description:
+      'A quiz application built with React featuring timer, scoring, and progress bar functionalities. Responsive and interactive.',
+    stack: [
+      'React', 'Tailwind CSS', 'useState', 'useEffect',
+      'React Router', 'JavaScript',
+    ],
+    live: 'https://react-quiz-apk.netlify.app/', 
+  },
+];
 
   return (
     <section className="px-6 py-16 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-300">
