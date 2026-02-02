@@ -8,7 +8,7 @@ const About = () => {
       </h2>
 
       <p className="text-base sm:text-lg leading-relaxed mb-5">
-        I’m a final year student of <strong>Computer Systems Engineering at Mehran UET Jamshoro</strong>. I have a strong passion for frontend development and UI design.
+        I’m a graduate of <strong>Computer Systems Engineering at Mehran UET Jamshoro</strong>. I have a strong passion for frontend development and UI design.
       </p>
 
       <p className="text-base sm:text-lg leading-relaxed mb-5">
