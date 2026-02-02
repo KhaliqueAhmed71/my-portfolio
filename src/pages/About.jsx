@@ -1,7 +1,7 @@
 
 const About = () => {
   return (
-    
+
     <section className="px-4 py-8 sm:px-6 lg:px-20 xl:px-36 bg-white dark:bg-gray-900 min-h-screen text-gray-800 dark:text-gray-200">
       <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-blue-600">
         About Me
@@ -16,7 +16,7 @@ const About = () => {
       </p>
 
       <p className="text-base sm:text-lg leading-relaxed mb-5">
-        I completed an internship at <strong>Verior</strong> during <strong>July–August 2025</strong>, where I contributed to real-world web development projects using modern tools and technologies.
+        I have successfully completed an internship at <strong>Verior</strong> during <strong>July–August 2025</strong>, where I contributed to real-world web development projects using modern tools and technologies.
       </p>
 
       <p className="text-base sm:text-lg leading-relaxed">
