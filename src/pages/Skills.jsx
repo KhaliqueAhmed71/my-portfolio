@@ -13,7 +13,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="min-h-screen px-6 py-16 bg-white text-gray-800 transition-colors duration-300">
+    <section className="min-h-screen px-6 py-16 bg-white text-gray-800 transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100">
       <h2 className="text-4xl sm:text-5xl font-bold text-center text-blue-600 mb-12">Skills</h2>
 
       <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto">

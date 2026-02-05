@@ -1,4 +1,3 @@
-import React from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from "./pages/Home.jsx";
 import About from './pages/About';
@@ -7,6 +6,7 @@ import Contact from './pages/Contact';
 import Skills from './pages/Skills';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import { Toaster } from 'react-hot-toast';
 
 
 // Page Transition Component
@@ -22,8 +22,9 @@ export default function App() {
   const location = useLocation();
 
   return (
-    <div>
+    <div className='bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100'>
       <Navbar />
+      <Toaster position="top-right" reverseOrder={false} />
       <main className="container mx-auto px-5 py-10 transition-all duration-300">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />

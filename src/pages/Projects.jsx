@@ -46,7 +46,7 @@ const projects = [
 
   return (
     <section className="px-6 py-16 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-300">
-      <h2 className="text-4xl sm:text-5xl font-bold text-center text-blue-600 mb-12">Projects</h2>
+      <h2 className="text-2xl sm:text-4xl font-bold text-center text-blue-600 mb-12">Projects</h2>
 
       <div className="grid gap-10 md:grid-cols-2">
         {projects.map((project, index) => (

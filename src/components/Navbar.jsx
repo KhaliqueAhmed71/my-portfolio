@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FiMenu, FiX } from 'react-icons/fi';
+import { FiMenu, FiX, FiSun, FiMoon } from 'react-icons/fi';
+import { ThemeContext } from '../context/ThemeContext';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
     <nav className="bg-gray-900 text-white shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <h1 className="text-2xl sm:text-3xl font-extrabold text-blue-400">My Portfolio</h1>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex justify-between items-center">
+        <h1 className="text-lg sm:text-2xl font-extrabold text-blue-400">Khalique.dev</h1>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 text-lg font-semibold">
@@ -19,6 +21,19 @@ const Navbar = () => {
           <li><Link to="/projects" className="hover:text-blue-400">Projects</Link></li>
           <li><Link to="/skills" className="hover:text-blue-400">Skills</Link></li>
           <li><Link to="/contact" className="hover:text-blue-400">Contact</Link></li>
+          <button
+            onClick={toggleTheme}
+            className=" ml-4 p-2 rounded-full bg-gray-700 hover:bg-gray-600 transition">
+            {theme === "light" ?
+              (
+                <FiMoon size={20} />
+              )
+              :
+              (
+                <FiSun size={20} />
+              )}
+          </button>
+
         </ul>
 
         {/* Mobile Menu Button */}
@@ -37,6 +52,18 @@ const Navbar = () => {
           <li><Link to="/projects" onClick={toggleMenu} className="block hover:text-blue-400">Projects</Link></li>
           <li><Link to="/skills" onClick={toggleMenu} className="block hover:text-blue-400">Skills</Link></li>
           <li><Link to="/contact" onClick={toggleMenu} className="block hover:text-blue-400">Contact</Link></li>
+          <button
+            onClick={toggleTheme}
+            className=" p-2 rounded-fullbg-gray-700 hover:bg-gray-600 transition ">
+            {theme === "light" ? 
+            (
+              <FiMoon size={20} />
+            ) : 
+            (
+              <FiSun size={20} />
+            )}
+          </button>
+
         </ul>
       )}
     </nav>
